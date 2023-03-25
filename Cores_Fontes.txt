@@ -1,0 +1,16 @@
+Cores:
+           BACKGROUND
+bg-title: #000118 (dark-blue)
+background: #1A1C2C (grey-blue)
+subbackgroud: #D9D9D9 (light-grey)
+	  TEXTO
+primary-color: #22D4FD (light-blue)
+white: #FFFFFF (pure-white)
+black: #000000 (pure-black)
+
+background-image: radial-gradient(farthest-corner at 0% 0%, #24D4FD, #000118);
+
+Fonts:
+
+primary-font: Inter
+secundary-font: Lato

@@ -1,0 +1,36 @@
+.plano__titulo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--bg-title);
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 1em 5em;
+    border-radius: 2em;
+}
+.card__titulo {
+    color: var(--secundary-color);
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.card__imagem {
+    width: 25em;
+    height: 5em;
+    margin: 1em 0;
+}
+
+.card__descricao {
+    font-family: var(--secundary-font);
+    font-size: 14px;
+    margin: 0 2em 1em 2em;
+    text-align: center;
+}
+

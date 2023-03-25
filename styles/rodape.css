@@ -1,0 +1,36 @@
+.rodape {
+    background: var(--bg-title);
+}
+
+.rodape-container__imagem {
+    text-align: center;
+}
+.rodape__imagem {
+    width: 2em;
+    height: 2em;
+    padding-top: 1em;
+    margin-left: 0.9em;
+}
+
+.rodape__direito {
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 12px;
+    text-align: center;
+    padding: 1em 2em 2em 2em;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+}
+
+.lista__link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--secundary-font);
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 1em;
+}

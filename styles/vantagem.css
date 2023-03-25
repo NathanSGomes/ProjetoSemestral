@@ -1,0 +1,26 @@
+.vantagem__titulo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--bg-title);
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+.vantagem__sobre {
+    display: flex;
+    align-items: center;
+    margin: 1em 2em;
+}
+
+.vantagem__imagem {
+    width: 5em;
+    height: 5em;
+}
+
+.vantagem__texto {
+    color: var(--primary-color);
+    margin-left: 1em;
+    font-family: var(--secundary-font);
+    font-size: 14px;
+}

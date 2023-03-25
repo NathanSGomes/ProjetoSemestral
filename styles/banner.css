@@ -1,0 +1,32 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    background: var(--banner-color);
+    padding: 2em;
+    align-items: center;
+}
+
+.banner__titulo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.banner__texto {
+    font-family: var(--secundary-font);
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 2em 0;
+}
+
+.banner__link {
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 2em;
+    padding: 0.5em 0.7em;
+    font-size: 14px;
+}
