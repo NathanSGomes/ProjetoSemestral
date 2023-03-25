@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: flex-start;
 }
 
 .container-contato {
@@ -46,7 +47,6 @@
 }
 
 .logo__link {
-    display: flex;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 700;
