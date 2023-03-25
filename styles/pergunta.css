@@ -5,7 +5,7 @@
     background-color: var(--bg-title);
     text-align: center;
     padding: 1em 0 1em 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
 }
 
 
@@ -13,7 +13,6 @@
 .detalhe__titulo {
     margin: 0 2em;
     color: var(--primary-color);
-    font-size: 14px;
     font-weight: 700;
 }
 
@@ -43,7 +42,7 @@ details[open] > summary {
 
 details {
     padding: 0.5rem;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
     background-color: var(--bg-title);
 }
 

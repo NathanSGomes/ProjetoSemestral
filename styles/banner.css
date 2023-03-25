@@ -14,7 +14,7 @@
 
 .banner__texto {
     font-family: var(--secundary-font);
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     color: var(--primary-color);
     margin: 2em 0;
@@ -29,6 +29,5 @@
     border-radius: 2em;
     padding: 0.5em 0.7em;
     font-weight: 700;
-    font-size: 14px;
     width: 80%;
 }
