@@ -32,3 +32,26 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+/* SecundaryPage */
+.cabecalho-contato {
+    background: var(--bg-title);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container-contato {
+    margin: 0.2em 1.5em;
+}
+
+.logo__link {
+    display: flex;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.logo__link-bold {
+    color: var(--effect-color);
+}
