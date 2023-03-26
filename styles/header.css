@@ -33,31 +33,6 @@
     font-weight: 700;
 }
 
-/* SecundaryPage */
-.cabecalho-contato {
-    background: var(--bg-title);
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: flex-start;
-}
-
-.container-contato {
-    margin: 0.2em 1.5em;
-    display: flex;
-    align-items: center;
-}
-
-.logo__link {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.logo__link-bold {
-    color: var(--effect-color);
-}
-
 .logo__link-p {
     display: none;
 }
@@ -99,5 +74,14 @@
 @media screen and (min-width: 1728px) {
     .container__link {
         font-size: 18px;
+    }
+
+    .container {
+        margin: 0 8em;
+        height: 10vh;
+    }
+
+    .container__link {
+        margin-right: 1em;
     }
 }

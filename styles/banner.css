@@ -56,8 +56,21 @@
 /* Responsividade Desktop */
 
 @media screen and (min-width: 1728px) {
+    .banner {
+        height: 30vh;
+        justify-content: center;
+    }
     .banner__link {
         width: 8%;
+    }
+
+    .banner__texto {
+        font-size: 20px;
+        margin: 4em 0;
+    }
+
+    .banner__titulo {
+        font-size: 24px;
     }
 }
 

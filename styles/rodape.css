@@ -72,3 +72,12 @@
         font-size: 14px;
     }
 }
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1728px) {
+    .lista__imagem {
+            width: 1.5em;
+            height: 1.5em;
+    }
+}
