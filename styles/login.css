@@ -95,5 +95,32 @@ details >summary {
     font-weight: 700;
 }
 
+/* Responsividade Tablet */
 
+@media screen and (min-width: 1024px) {
+    .registro {
+        width: 40%;
+        margin-left: 20.23em;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1728px) {
+    .registro {
+        width: 30%;
+        margin-left: 40.23em;
+        margin-bottom: 47vh;
+        margin-top: 15vh;
+    }
+
+    .cadastro__titulo, .login__titulo {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primary-color);
+        padding-left: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
 

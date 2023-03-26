@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 22vh;
     border-bottom: 0.1em solid var(--grey);
 }
 
@@ -44,4 +45,42 @@
 
 .fundo {
     background: var(--banner-color);
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .suporte {
+        height: 28vh;
+    }
+
+    .contrato, .ajuda {
+        width: 60%;
+        margin-left: 30vh;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1728px) {
+    .suporte {
+        height: 28vh;
+    }
+
+    .contrato, .ajuda {
+        width: 40%;
+        margin-left: 50vh;
+    }
+
+    .contrato {
+        margin-top: 10vh;
+    }
+
+    .ajuda {
+        margin-top: 8vh;
+    }
+
+    .ajuda__texto {
+        margin-bottom: 5em;
+    }
 }
