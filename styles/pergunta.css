@@ -22,6 +22,7 @@
     font-family: var(--secundary-font);
     font-weight: 400;
     margin: 0 1em;
+    padding-bottom: 1em;
 }
 
 details>summary {

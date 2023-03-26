@@ -82,22 +82,22 @@ details > summary {
     margin: 1em 0em 0.5em 6em;
 }
 
-.login__entrar:hover {
-    background-color: var(--effect-color);
-    font-weight: 700;
-}
-
-.cadastro__titulo:hover, .login__titulo:hover {
-    color: var(--effect-color);
-    font-weight: 700;
-}
-
 /* Responsividade Tablet */
 
 @media screen and (min-width: 1024px) {
     .registro {
         width: 40%;
         margin-left: 20.23em;
+    }
+    
+    .login__entrar:hover {
+        background-color: var(--effect-color);
+        font-weight: 700;
+    }
+    
+    .cadastro__titulo:hover, .login__titulo:hover {
+        color: var(--effect-color);
+        font-weight: 700;
     }
 }
 
@@ -118,6 +118,11 @@ details > summary {
         padding-left: 1em;
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+
+    .login__entrar {
+        border-radius: 24px;
+        margin-left: 1em;
     }
 }
 
