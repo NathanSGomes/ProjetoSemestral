@@ -1,0 +1,45 @@
+.suporte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1em solid var(--grey);
+}
+
+.suporte__ajuda {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 2em;
+}
+
+.contrato__titulo {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 2em 2em 0 2em;
+}
+
+.contrato__texto {
+    font-size: 16px;
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    color: var(--primary-color);
+    margin: 1em 2em;
+}
+
+.ajuda__titulo {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 2em 2em 0 2em;
+}
+
+.ajuda__texto {
+    font-size: 16px;
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    color: var(--primary-color);
+    margin: 1em 2em 2.2em 2em;
+}
+
+.fundo {
+    background: var(--banner-color);
+}

@@ -5,6 +5,7 @@
 @import url(styles/plano.css);
 @import url(styles/pergunta.css);
 @import url(styles/rodape.css);
+@import url(styles/contato.css);
 
 :root {
     --bg-title: #000118;
