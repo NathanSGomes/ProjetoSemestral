@@ -65,12 +65,17 @@
     }
 
     .banner__texto {
-        font-size: 20px;
-        margin: 4em 0;
+        font-size: 24px;
+        margin: 3em 0;
     }
 
     .banner__titulo {
-        font-size: 24px;
+        font-size: 32px;
+    }
+
+    .banner__link {
+        font-size: 20px;
+        padding: 1em;
     }
 }
 

@@ -74,6 +74,7 @@
 @media screen and (min-width: 1728px) {
     .container__link {
         font-size: 18px;
+        padding: 1em;
     }
 
     .container {

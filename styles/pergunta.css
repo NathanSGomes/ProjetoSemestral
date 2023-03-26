@@ -69,3 +69,19 @@ details[open] > summary {
         color: var(--effect-color);
     }
 }
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1728px) {
+    .pergunta__titulo {
+        font-size: 26px;
+    }
+
+    .detalhe__titulo {
+        font-size: 22px;
+    }
+
+    .detalhe__texto {
+        font-size: 20px;
+    }
+}
