@@ -10,7 +10,7 @@
 .vantagem__sobre {
     display: flex;
     align-items: center;
-    margin: 1em 2em;
+    margin: 3em 5em;
 }
 
 .vantagem__imagem {
@@ -38,9 +38,6 @@
     margin-bottom: 0.3em;
 }
 
-.container__vantagem {
-    margin: 3em 1em;
-}
 /* Responsividade Tablet */
 
 @media screen and (min-width: 1024px) {
@@ -51,6 +48,7 @@
     }
     .vantagem__sobre {
         flex-direction: column;
+        margin: 0 2em;
     }
 
     .vantagem__imagem{
