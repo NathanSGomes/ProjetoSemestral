@@ -61,7 +61,8 @@
     }
 
     .container__link:hover{
-        background-color: var(--effect-color);
+        color: var(--effect-color);
+        border: 2px solid var(--effect-color);
     }
 }
 
