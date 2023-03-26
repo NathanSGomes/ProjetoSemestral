@@ -93,3 +93,11 @@
         font-size: 16px;
     }
 }
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        font-size: 18px;
+    }
+}
