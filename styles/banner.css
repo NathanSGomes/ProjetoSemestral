@@ -31,3 +31,24 @@
     font-weight: 700;
     width: 80%;
 }
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .banner__link {
+        width: 30%;
+        font-size: 18px;
+    }
+
+    .banner__titulo {
+        font-size: 24px;
+    }
+
+    .banner__titulo {
+        font-size: 18px;
+    }
+
+    .banner__link:hover {
+        background-color: var(--effect-color);
+    }
+}

@@ -34,3 +34,41 @@
     font-weight: 700;
     margin: 0 1em;
 }
+
+.lista__imagem {
+    display: none;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .lista__link {
+        font-size: 14px;
+        margin-right: 0 2em 0 0;
+    }
+
+    .lista__link:hover {
+        color: var(--effect-color);
+    }
+
+    .rodape__imagem {
+        width: 3em;
+        height: 3em;
+        padding-top: 2em;   
+    }
+    
+    .container__lista {
+        display: flex;
+        align-items: center;
+    }
+
+    .lista__imagem {
+        width: 1em;
+        height: 1em;
+        display: block;
+    }
+
+    .rodape__direito {
+        font-size: 14px;
+    }
+}

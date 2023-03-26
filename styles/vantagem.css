@@ -37,3 +37,38 @@
     font-size: 14px;
     margin-bottom: 0.3em;
 }
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .container__vantagem {
+        display: flex;
+        justify-content: center;
+        margin: 4em 2em;
+    }
+    .vantagem__sobre {
+        flex-direction: column;
+    }
+
+    .vantagem__imagem{
+        width: 8em;
+        height: 8em;
+        margin-bottom: 1em;
+    }
+
+    .vantagem__container-texto {
+        text-align: center;
+    }
+
+    .vantagem__titulo {
+        font-size: 22px;
+    }
+    
+    .vantagem__texto {
+        font-size: 18px;
+    }
+    
+    .vantagem__descricao {
+        font-size: 16px;
+    }
+}

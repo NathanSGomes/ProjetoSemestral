@@ -35,3 +35,34 @@
     text-align: center;
 }
 
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .plano__titulo {
+        font-size: 22px;
+    }
+
+    .container__card {
+        display: flex;
+        justify-content: center;
+        margin: 4em 2em;
+    }
+
+    .card {
+        width: 20%;
+        margin: 0 1em;
+    }
+    
+    .card__imagem {
+        width: 40em;
+        height: 8em;
+    }
+
+    .card__titulo {
+        font-size: 18px;
+    }
+
+    .card__descricao {
+        font-size: 16px;
+    }
+}

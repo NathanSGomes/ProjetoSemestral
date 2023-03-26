@@ -44,6 +44,8 @@
 
 .container-contato {
     margin: 0.2em 1.5em;
+    display: flex;
+    align-items: center;
 }
 
 .logo__link {
@@ -54,4 +56,40 @@
 
 .logo__link-bold {
     color: var(--effect-color);
+}
+
+.logo__link-p {
+    display: none;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__link-p {
+        display: block;
+    }
+
+    .logo__link-p {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .logo__link-bold-p {
+        color: var(--effect-color);
+    }
+
+    .container__link:hover{
+        background-color: var(--effect-color);
+    }
+
+    .container__link {
+        font-size: 16px;
+    }
 }
