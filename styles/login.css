@@ -31,14 +31,11 @@
     margin-bottom: 1em;
 }
 
-
-details[open]>summary {
- 
+details[open] >summary {
     list-style: none;
 }
 
-details >summary {
- 
+details > summary {
     list-style: none;
 }
 
