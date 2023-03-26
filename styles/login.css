@@ -1,5 +1,5 @@
 .registro {
-    margin-bottom: 48vh;
+    margin-bottom: 45vh;
     margin-top: 20vh;
 }
 .registro__cadastro, .registro__login {
@@ -19,7 +19,7 @@
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
     border: 1px solid var(--grey);
-    border-top: none;
+ 
 }
 
 .cadastro__titulo, .login__titulo {
@@ -27,15 +27,10 @@
     font-weight: 700;
     color: var(--primary-color);
     padding-left: 1em;
-}
-
-.cadastro__titulo{
     margin-top: 1em;
-}
-
-.login__titulo {
     margin-bottom: 1em;
 }
+
 
 details[open]>summary {
  
@@ -94,4 +89,11 @@ details >summary {
     background-color: var(--effect-color);
     font-weight: 700;
 }
+
+.cadastro__titulo:hover, .login__titulo:hover {
+    color: var(--effect-color);
+    font-weight: 700;
+}
+
+
 
