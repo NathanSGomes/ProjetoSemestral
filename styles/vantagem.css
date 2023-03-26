@@ -38,6 +38,9 @@
     margin-bottom: 0.3em;
 }
 
+.container__vantagem {
+    margin: 3em 1em;
+}
 /* Responsividade Tablet */
 
 @media screen and (min-width: 1024px) {
