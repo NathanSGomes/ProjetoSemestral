@@ -8,12 +8,12 @@
     margin-bottom: 0.1em;
 }
 
-
-
 .detalhe__titulo {
     margin: 0 2em;
     color: var(--primary-color);
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
 }
 
 .detalhe__texto {
@@ -31,14 +31,6 @@ details>summary {
 }
 summary::-webkit-details-marker {
     display: none
-}
-
-details > summary {
-    list-style-type: '+ ';
-}
-
-details[open] > summary {
-    list-style-type: '- ';
 }
 
 details {
