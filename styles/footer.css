@@ -1,0 +1,34 @@
+.container__rodape {
+    background: var(--bg-title);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__img {
+    width: 4em;
+    height: 2em;
+    margin-top: 1em;
+}
+
+.rodape__direito {
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 0.75rem;
+    padding: 1em 2em 2em 2em;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 720px) {
+    .rodape__direito {
+        font-size: 0.875rem;
+        margin-bottom: 0.5em;
+    }
+
+    .rodape__img {
+        width: 5em;
+        height: 2.5em;
+    }
+}

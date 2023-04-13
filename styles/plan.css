@@ -1,0 +1,127 @@
+@keyframes color {
+    0% {
+        background: #0052D4;
+    }
+    
+    25% {
+        background: #4364F7;
+    }
+    
+    50% {
+        background: #6FB1FC;
+    }
+    
+    75% {
+        background: #4364F7;
+    }
+    
+    100% {
+        background: #0052D4;
+    }
+}
+
+.container__plano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #000118;
+    animation: color 20s ease infinite;
+    padding: 2em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.plano__titulo {
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--primary-color);
+    margin: 2em 0 1em 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 4em 1.5em;
+    border-radius: 2em;
+    width: 18em;
+}
+
+.card__titulo {
+    color: var(--secundary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.card__imagem {
+    width: 7em;
+    height: 7em;
+    margin-top: 1em;
+}
+
+.card__descricao {
+    font-family: var(--secundary-font);
+    font-size: 0.875rem;
+    margin: 0 2em 1em 2em;
+    text-align: center;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 720px) {
+    .container__plano {
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .plano__card {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .card {
+        width: 20%;
+        height: 100%;
+        margin: 0 1em;
+    }
+
+    .card__imagem {
+        width: 8em;
+        height: 8em;
+    }
+
+    .card__titulo {
+        font-size: 1.125rem;
+    }
+
+    .card__descricao {
+        font-size: 1rem;
+    }
+
+    .plano__titulo {
+        margin-bottom: 3em;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1440px) {
+    .container__plano {
+        height: 50%;
+    }
+    
+    .plano__card {
+        align-items: center;
+        height: 25vh;
+    }
+
+    .plano__titulo {
+        font-size: 1.625em;
+    }
+
+}

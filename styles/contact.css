@@ -1,0 +1,127 @@
+.container__contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+}
+
+.contato__caixa {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px var(--secundary-color);
+    margin: 5em 2em;
+    width: 20em;
+}
+
+.contato__titulo {
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--secundary-color);
+    margin: 1em 0 1em 1em;
+}
+
+.contato__texto {
+    font-family: var(--secundary-font);
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--secundary-color);
+    margin: 1em 0 1em 1em;
+}
+
+.contato__contato {
+    display: flex;
+    align-items: center;
+    margin: 1em 0 1em 1em;
+}
+
+.contato__icone {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+.contato__contato-titulo {
+    color: var(--secundary-color);
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: var(--secundary-font);
+}
+
+.contato__contato-texto {
+    color: var(--secundary-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: var(--secundary-font);
+}
+
+.contato__contato-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.875rem;
+    background: var(--secundary-color);  /* fallback for old browsers */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin: 1em 3em 1em 1em;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+.contato__redes {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.contato__redes-btn-img {
+    width: 1.4em;
+    height: 1.4em;
+    margin: 0.5em;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 720px) {
+    .contato__titulo {
+        font-size: 1.625rem;
+    }
+
+    .contato__texto {
+        font-size: 1rem;
+    }
+
+    .contato__contato-titulo, .contato__contato-texto {
+        font-size: 1rem;
+    }
+
+    .contato__contato-btn {
+        font-size: 1rem;
+    }
+
+    .contato__caixa {
+        width: 22em;
+    }
+
+    .contato__icone {
+        width: 2.55em;
+        height: 2.55em;
+    }
+
+    .contato__redes-btn-img{
+        width: 1.66em;
+        height: 1.66em;
+    }
+
+    .contato__contato-btn:hover {
+        transition: 0.6s;
+        color: var(--effect-color);
+    }
+
+    .contato__redes-btn-img:hover {
+        transition: 0.6s;
+        border-radius: 100%;
+        background-color: var(--effect-color);
+    }
+
+}
