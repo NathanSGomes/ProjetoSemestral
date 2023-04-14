@@ -47,6 +47,7 @@
     font-size: 0.875rem;
     font-weight: 700;
     font-family: var(--secundary-font);
+    margin-bottom: 0.25rem;
 }
 
 .contato__contato-texto {
@@ -78,8 +79,8 @@
 }
 
 .contato__redes-btn-img {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin: 0.5rem;
 }
 
