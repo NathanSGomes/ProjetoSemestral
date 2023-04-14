@@ -103,6 +103,16 @@
     }
 }
 
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+    .plano__card {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
 /* Responsividade Desktop */
 
 @media screen and (min-width: 1440px) {
