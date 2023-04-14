@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     background: var(--bg-color);
+    padding: 1rem;
 }
 
 .contato__caixa {
@@ -10,15 +11,15 @@
     flex-direction: column;
     background-color: var(--primary-color);
     box-shadow: 0px 4px 4px var(--secundary-color);
-    margin: 5em 2em;
-    width: 20em;
+    margin: 5rem 0;
+    width: 20rem;
 }
 
 .contato__titulo {
     font-weight: 700;
     font-size: 1.375rem;
     color: var(--secundary-color);
-    margin: 1em 0 1em 1em;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .contato__texto {
@@ -26,19 +27,19 @@
     font-weight: 400;
     font-size: 0.875rem;
     color: var(--secundary-color);
-    margin: 1em 0 1em 1em;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .contato__contato {
     display: flex;
     align-items: center;
-    margin: 1em 0 1em 1em;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .contato__icone {
-    width: 2em;
-    height: 2em;
-    margin-right: 1em;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 .contato__contato-titulo {
@@ -60,24 +61,26 @@
     color: var(--primary-color);
     font-weight: 700;
     font-size: 0.875rem;
-    background: var(--secundary-color);  /* fallback for old browsers */
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #22D4FD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    margin: 1em 3em 1em 1em;
-    padding: 1em 1.5em 1em 1.5em;
+    margin: 1rem 3rem 1rem 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 .contato__redes {
     display: flex;
     align-items: center;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .contato__redes-btn-img {
-    width: 1.4em;
-    height: 1.4em;
-    margin: 0.5em;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0.5rem;
 }
 
 /* Responsividade Tablet */
@@ -124,4 +127,11 @@
         background-color: var(--effect-color);
     }
 
+}
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1440px) {
+    .contato__contato-btn {
+        background: var(--secundary-color);
+    }
 }

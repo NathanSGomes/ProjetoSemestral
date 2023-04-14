@@ -1,14 +1,37 @@
+@keyframes color-text {
+    0% {
+       color: #fc4a1a;
+    }
+    
+    25% {
+        color: #FF0080;
+    }
+    
+    50% {
+        color: #40E0D0;
+    }
+    
+    75% {
+        color: #FF0080;
+    }
+    
+    100% {
+       color: #fc4a1a;
+    }
+}
+
 .container__rodape {
     background: var(--bg-title);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .rodape__img {
-    width: 4em;
-    height: 2em;
-    margin-top: 1em;
+    width: 4rem;
+    height: 2rem;
+    margin-top: 1rem;
 }
 
 .rodape__direito {
@@ -16,7 +39,21 @@
     font-weight: 300;
     color: var(--grey);
     font-size: 0.75rem;
-    padding: 1em 2em 2em 2em;
+    padding: 1rem 0;
+}
+
+.credito {
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.credito__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--effect-color);
 }
 
 /* Responsividade Tablet */
@@ -24,11 +61,24 @@
 @media screen and (min-width: 720px) {
     .rodape__direito {
         font-size: 0.875rem;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
     }
 
     .rodape__img {
-        width: 5em;
-        height: 2.5em;
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+    .credito {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+
+    .credito__link {
+        color: var(--grey);
+    }
+
+    .credito__link:hover {
+        animation: color-text 6s ease infinite;
     }
 }

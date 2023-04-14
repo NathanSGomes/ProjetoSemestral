@@ -27,8 +27,8 @@
     text-align: center;
     background: #000118;
     animation: color 20s ease infinite;
-    padding: 2em;
-    border-radius: 2em;
+    padding: 1rem;
+    border-radius: 2rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -36,7 +36,7 @@
     font-weight: 700;
     font-size: 1.375rem;
     color: var(--primary-color);
-    margin: 2em 0 1em 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .card {
@@ -45,54 +45,49 @@
     align-items: center;
     background-color: var(--primary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 4em 1.5em;
-    border-radius: 2em;
-    width: 18em;
+    margin: 4rem 1.5rem;
+    border-radius: 2rem;
+    width: 18rem;
 }
 
 .card__titulo {
     color: var(--secundary-color);
     font-size: 1rem;
     font-weight: 700;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .card__imagem {
-    width: 7em;
-    height: 7em;
-    margin-top: 1em;
+    width: 7rem;
+    height: 7rem;
+    margin-top: 1rem;
 }
 
 .card__descricao {
     font-family: var(--secundary-font);
     font-size: 0.875rem;
-    margin: 0 2em 1em 2em;
+    margin: 0 2rem 1rem 2rem;
     text-align: center;
 }
 
 /* Responsividade Tablet */
 
 @media screen and (min-width: 720px) {
-    .container__plano {
-        height: 100vh;
-        justify-content: center;
-    }
 
     .plano__card {
-        display: flex;
         justify-content: center;
-        margin-bottom: 2em;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 
     .card {
-        width: 20%;
-        height: 100%;
-        margin: 0 1em;
+        width: 40rem;
+        margin: 1rem;
     }
 
     .card__imagem {
-        width: 8em;
-        height: 8em;
+        width: 8rem;
+        height: 8rem;
     }
 
     .card__titulo {
@@ -104,20 +99,18 @@
     }
 
     .plano__titulo {
-        margin-bottom: 3em;
+        margin-bottom: 3rem;
     }
 }
 
 /* Responsividade Desktop */
 
 @media screen and (min-width: 1440px) {
-    .container__plano {
-        height: 50%;
-    }
-    
+
     .plano__card {
-        align-items: center;
-        height: 25vh;
+        display: flex;
+        width: 80rem;
+        gap: 2rem;
     }
 
     .plano__titulo {

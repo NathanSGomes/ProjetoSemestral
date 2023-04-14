@@ -4,11 +4,11 @@
     align-items: center;
     background: var(--bg-color);
     height: 90vh;
-    padding: 2em;
+    padding: 1rem;
 }
 
 .sobre__conteudo {
-    margin: 3em 0;
+    margin: 3rem 0;
 }
 
 .sobre__titulo {
@@ -16,9 +16,9 @@
     font-size: 1.375rem;
     color: var(--primary-color);
     text-align: center;
-    margin: 5em 0 3em 0;
+    margin: 5rem 0 3rem 0;
     border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 .sobre__titulo--azul {
@@ -31,7 +31,7 @@
     font-size: 1rem;
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .sobre__btn {
@@ -45,30 +45,8 @@
     background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0072ff, #22D4FD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 8px;
-    padding: 1em 1.5em;
-    margin: 2em 0;
-}
-
-/* Responsividade para alguns celulares */
-
-@media screen and (max-width: 375px) {
-    .container__sobre {
-        height: 100vh; 
-    }
-    
-    .sobre__btn {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .container__sobre {
-        height: 100vh; 
-    }
-    
-    .sobre__btn {
-        margin: 0;
-    }
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
 }
 
 /* Responsividade Tablet */
