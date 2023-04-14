@@ -1,0 +1,66 @@
+/* Header */
+
+.header__forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+    border-top: 2px solid var(--effect-color);
+    width: 100vw;
+    background-color: var(--bg-title);
+}
+
+.forms__img-mobile {
+    width: 6rem;
+    height: 3rem;
+}
+
+.forms__logo {
+    display: none;
+}
+
+.forms__link {
+    display: none;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+
+    .forms__img-mobile {
+        display: none;
+    }
+
+    .header__forms {
+        justify-content: left;
+    }
+
+    .forms__logo {
+        display: flex;
+        align-items: center;
+    }
+    .forms__img{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 1rem;
+    }
+
+    .forms__link {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .forms__link-azul {
+        color: var(--effect-color);
+    }
+}
+
+/* Forms*/
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}

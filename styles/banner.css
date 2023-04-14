@@ -55,8 +55,8 @@
 .banner__redes_container {
     align-self: start;
     width: 100%;
-    margin-left: 5%;
-    margin-bottom: 3rem;
+    padding-left: 5%;
+    padding-bottom: 3rem;
 }
 
 .banner__contato {

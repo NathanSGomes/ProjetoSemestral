@@ -96,6 +96,7 @@
 /* Responsividade Tablet */
 
 @media screen and (min-width: 1024px) {
+    
     .container__rotulo {
         display: none;
     }
@@ -113,11 +114,9 @@
         height: 3.5rem;
         margin-left: 1rem;
     }
-    .logo__link {
-        display: block;
-    }
 
     .logo__link {
+        display: block;
         text-decoration: none;
         color: var(--primary-color);
         font-weight: 700;
