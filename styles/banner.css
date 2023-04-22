@@ -14,7 +14,7 @@
     width: 100%;
     height: width / 1.5;
     padding-top: 3rem;
-}   
+}
 
 .banner__conteudo {
     padding: 0 0.5rem;
@@ -49,9 +49,12 @@
     color: var(--primary-color);
     font-weight: 700;
     font-size: 0.875rem;
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #22D4FD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #22D4FD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 8px;
     padding: 1em;
     white-space: nowrap;
@@ -78,6 +81,10 @@
 }
 
 .banner__saiba-mais-img {
+    background-image: url(/assets/Info.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -120,7 +127,7 @@
     .espaco {
         display: none;
     }
-    
+
     .banner {
         display: flex;
         flex-direction: column;
@@ -144,7 +151,17 @@
 
     .banner__saiba-mais:hover {
         transition: 0.6s;
+        background-color: var(--primary-color);
+        color: var(--secundary-font);
         box-shadow: 0 0 2em var(--effect-color);
+    }
+
+    .banner__saiba-mais:hover .banner__saiba-mais-img {
+        transition: 0.6s;
+        background-image: url(/assets/InfoBlack.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
     }
 
     .banner__redes-btn-img:hover {
@@ -183,7 +200,8 @@
         justify-content: center;
     }
 
-    .banner__titulo, .banner__texto {
+    .banner__titulo,
+    .banner__texto {
         text-align: left;
     }
 
@@ -202,10 +220,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+
     .container__banner {
         padding: 0 10vw;
     }
+
     .banner {
         justify-content: center;
     }
@@ -213,12 +232,13 @@
     .banner__titulo {
         font-size: 2.5em;
     }
-    
+
     .banner__texto {
         font-size: 1.5em;
     }
 
-    .banner__contato, .banner__saiba-mais {
+    .banner__contato,
+    .banner__saiba-mais {
         font-size: 1em;
     }
 
@@ -226,5 +246,3 @@
         font-size: 1.375em;
     }
 }
-
-
