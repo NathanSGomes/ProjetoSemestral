@@ -245,4 +245,9 @@
     .banner__redes-texto {
         font-size: 1.375em;
     }
+
+    .banner__redes-btn-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
