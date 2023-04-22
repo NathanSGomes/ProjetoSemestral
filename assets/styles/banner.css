@@ -1,0 +1,245 @@
+.container__banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    padding: 15vh 1rem 0 1rem;
+}
+
+.banner__img {
+    width: 100%;
+    height: width / 1.5;
+    padding-top: 2rem;
+}
+
+.banner__conteudo {
+    padding: 0 0.5rem;
+}
+
+.banner__titulo {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.banner__texto {
+    font-family: var(--secundary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.banner__btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.banner__contato {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.875rem;
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #22D4FD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 8px;
+    padding: 1em;
+    white-space: nowrap;
+    margin-right: 1rem;
+}
+
+.banner__contato-img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5em;
+}
+
+.banner__saiba-mais {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1em;
+    white-space: nowrap;
+}
+
+.banner__saiba-mais-img {
+    background-image: url(../img/Info.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.banner__redes {
+    padding-left: 1rem;
+}
+
+.banner__redes-texto {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.banner__redes-sociais {
+    display: inline-block;
+    margin: 0.5em 0;
+}
+
+.banner__redes-btn {
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.banner__redes-btn-img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 720px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .banner__img {
+        width: 80%;
+    }
+
+    .banner__conteudo {
+        padding-bottom: 1rem;
+    }
+
+    .banner__contato:hover {
+        transition: 0.6s;
+        background: linear-gradient(to right, #22D4FD, #0072ff);
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
+    .banner__saiba-mais:hover {
+        transition: 0.6s;
+        background-color: var(--primary-color);
+        color: var(--secundary-font);
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
+    .banner__saiba-mais:hover .banner__saiba-mais-img {
+        transition: 0.6s;
+        background-image: url(../img/InfoBlack.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+
+    .banner__redes-btn-img:hover {
+        transition: 0.6s;
+        border-radius: 100%;
+        background-color: #0072ff;
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+
+    .container__banner {
+        padding: 0 3rem;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .banner__img {
+        width: 50%;
+    }
+
+    .banner__conteudo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner__titulo,
+    .banner__texto {
+        text-align: left;
+    }
+
+    .banner__titulo {
+        font-size: 2.2rem;
+    }
+
+    .banner__texto {
+        font-size: 1.2rem;
+    }
+
+    .banner__btn {
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container__banner {
+        padding: 10vh 10vw 4rem 10vw;
+    }
+
+    .banner {
+        justify-content: center;
+    }
+
+    .banner__titulo {
+        font-size: 2.5em;
+    }
+
+    .banner__texto {
+        font-size: 1.5em;
+    }
+
+    .banner__contato,
+    .banner__saiba-mais {
+        font-size: 1em;
+        margin-right: 1.5rem;
+    }
+
+    .banner__redes-texto {
+        font-size: 1.375em;
+    }
+
+    .banner__redes-btn-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
