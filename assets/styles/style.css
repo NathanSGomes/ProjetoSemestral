@@ -199,5 +199,6 @@ body {
 
     .ArrowUp__img:hover {
         opacity: 1;
+        transition: .6s;
     }
 }
