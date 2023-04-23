@@ -37,6 +37,10 @@ body {
     font-weight: 400;
 }
 
+#ArrowUp__btn {
+    display: none;
+}
+
 .area {
     background: var(--bg-title);   
     width: 100%;
