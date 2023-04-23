@@ -49,12 +49,8 @@
     color: var(--primary-color);
     font-weight: 700;
     font-size: 0.875rem;
-    background: #00d2ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #22D4FD);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(../img/btn.png);
+    background-size: 100% 100%;
     border-radius: 8px;
     padding: 1em;
     white-space: nowrap;
@@ -113,6 +109,7 @@
 .banner__redes-btn-img {
     width: 2rem;
     height: 2rem;
+    border-radius: 100%;
 }
 
 /* Responsividade Tablet */
@@ -215,9 +212,9 @@
         height: 2.5rem;
     }
 
-        .banner__contato:hover {
+    .banner__contato:hover {
         transition: 0.6s;
-        background: linear-gradient(to right, #22D4FD, #0072ff);
+        background-image: url(../img/btn-hover.png);
         box-shadow: 0 0 2em var(--effect-color);
     }
 
@@ -240,7 +237,7 @@
         transition: 0.6s;
         border-radius: 100%;
         background-color: #0072ff;
-        box-shadow: 0 0 2em var(--effect-color);
+        box-shadow: 0 0 1rem var(--effect-color);
     }
 
 }

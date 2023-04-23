@@ -62,9 +62,8 @@
     color: var(--primary-color);
     font-weight: 700;
     font-size: 0.875rem;
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #22D4FD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #22D4FD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(../img/btn.png);
+    background-size: 100% 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     margin: 1rem 3rem 1rem 1rem;
@@ -95,7 +94,8 @@
         font-size: 1rem;
     }
 
-    .contato__contato-titulo, .contato__contato-texto {
+    .contato__contato-titulo,
+    .contato__contato-texto {
         font-size: 1rem;
     }
 
@@ -112,7 +112,7 @@
         height: 2.55em;
     }
 
-    .contato__redes-btn-img{
+    .contato__redes-btn-img {
         width: 1.66em;
         height: 1.66em;
     }
@@ -129,10 +129,21 @@
     }
 
 }
+
 /* Responsividade Desktop */
 
 @media screen and (min-width: 1440px) {
-    .contato__contato-btn {
-        background: var(--secundary-color);
+
+    .contato__contato-btn:hover {
+        transition: 1s;
+        background-image: url(../img/btn-hover.png);
+        color: var(--primary-color);
     }
+
+    .contato__redes-btn-img:hover {
+        transition: 0.6s;
+        border-radius: 100%;
+        background-color: var(--effect-color);
+    }
+
 }
