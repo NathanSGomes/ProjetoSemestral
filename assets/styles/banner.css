@@ -134,34 +134,6 @@
         padding-bottom: 1rem;
     }
 
-    .banner__contato:hover {
-        transition: 0.6s;
-        background: linear-gradient(to right, #22D4FD, #0072ff);
-        box-shadow: 0 0 2em var(--effect-color);
-    }
-
-    .banner__saiba-mais:hover {
-        transition: 0.6s;
-        background-color: var(--primary-color);
-        color: var(--secundary-font);
-        box-shadow: 0 0 2em var(--effect-color);
-    }
-
-    .banner__saiba-mais:hover .banner__saiba-mais-img {
-        transition: 0.6s;
-        background-image: url(../img/InfoBlack.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover
-    }
-
-    .banner__redes-btn-img:hover {
-        transition: 0.6s;
-        border-radius: 100%;
-        background-color: #0072ff;
-        box-shadow: 0 0 2em var(--effect-color);
-    }
-
 }
 
 /* Responsividade Tablet */
@@ -242,4 +214,33 @@
         width: 2.5rem;
         height: 2.5rem;
     }
+
+        .banner__contato:hover {
+        transition: 0.6s;
+        background: linear-gradient(to right, #22D4FD, #0072ff);
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
+    .banner__saiba-mais:hover {
+        transition: 0.6s;
+        background-color: var(--primary-color);
+        color: var(--secundary-font);
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
+    .banner__saiba-mais:hover .banner__saiba-mais-img {
+        transition: 0.6s;
+        background-image: url(../img/InfoBlack.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+
+    .banner__redes-btn-img:hover {
+        transition: 0.6s;
+        border-radius: 100%;
+        background-color: #0072ff;
+        box-shadow: 0 0 2em var(--effect-color);
+    }
+
 }

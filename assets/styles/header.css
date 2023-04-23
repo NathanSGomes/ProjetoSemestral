@@ -18,7 +18,7 @@
 .cabeçalho__menu {
     width: 1.5px;
     height: 1.5px;
-    background-image: url("../assets/Menu.svg");
+    background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -29,7 +29,7 @@
     align-items: center;
 }
 .container__botao:checked~ .container__rotulo > .cabeçalho__menu {
-    background-image: url(../assets/MenuAberto.svg);
+    background-image: url(../img/MenuAberto.svg);
 }
 
 .container__botao:checked~ .container__rotulo {
@@ -138,12 +138,6 @@
         font-weight: 700;
     }
 
-    .lista-menu__link:hover {
-        transition: 0.6s;
-        background-color: var(--effect-color);
-        letter-spacing: 0.2rem;
-        border-bottom: 1px solid var(--effect-color);
-    }
 }
 
 /* Responsividade Desktop */
@@ -166,5 +160,12 @@
     .lista-menu__link {
         padding: 1rem 2.5rem;
         font-size: 1.25rem;
+    }
+
+    .lista-menu__link:hover {
+        transition: 0.6s;
+        background-color: var(--effect-color);
+        letter-spacing: 0.2rem;
+        border-bottom: 1px solid var(--effect-color);
     }
 }
