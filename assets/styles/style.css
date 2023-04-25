@@ -192,9 +192,9 @@ body {
         height: 3rem;
         background-image: url(../img/btn.png);
         background-size: 100% 100%;
-        border-radius: 100%;
+        border-radius: 8px;
         align-self: end;
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     .ArrowUp__img:hover {
