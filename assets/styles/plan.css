@@ -53,59 +53,63 @@
     gap: 3rem;
 }
 
-.label__card {
-    display: block;
+.card {
     width: 18.75rem;
     height: 18.75rem;
-    transform: translate(-50, -50);
-    cursor: pointer;
     perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: 10;
-    transition: all 1000ms;
     border-radius: 24px;
 }
 
-.card div {
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color);
-    background-size: cover;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 24px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-.card .back-card {
-    position: absolute; /*Mudança*/
-    background-color: var(--bg-title);
-    background-size: cover;
-    transform: rotateY(180deg);
-    padding: 0 2rem;
-    border: 2px solid var(--effect-color);
-}
-
-.input__card {
-    display: none;
-}
-
-:checked + .card {
-    transform: rotateY(180deg);
-}
-
 .card__titulo {
     font-size: 1.25rem;
+}
+
+.card__face--back {
+    background-color: var(--bg-title);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 2px solid var(--effect-color);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card__face--back .card__titulo {
+    color: var(--primary-color);
 }
 
 .card__texto {
@@ -113,6 +117,7 @@
     font-weight: 400;
     font-size: 1rem;
     color: var(--primary-color);
+    text-align: center;
 }
 
 .card__btn {
@@ -170,7 +175,8 @@
         font-size: 1.5rem;
     }
 
-    .label__card:hover .card {
+    .card__face:hover {
+        transition: .6s;
         box-shadow: 0 0 2rem var(--effect-color);
         border-radius: 24px;
     }
