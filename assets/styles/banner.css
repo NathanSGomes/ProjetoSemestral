@@ -101,15 +101,31 @@
     margin: 0.5em 0;
 }
 
-.banner__redes-btn {
+.banner__redes-sociais .button{
+    display: inline-block;
+    height: 2.25rem;
+    width: 2.25rem;
+    margin: 0 7px;
+    background-color: #fff;
+    overflow: hidden; 
+    border-radius: 50px;
+    cursor: pointer;
     text-decoration: none;
-    margin-right: 1em;
 }
 
-.banner__redes-btn-img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
+.banner__redes-sociais .button .icon{
+    display: inline-block;
+    height: 2.25rem;
+    width: 2.25rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50px;
+    color: var(--bg-title);
+}
+
+.banner__redes-sociais .button .icon i{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
 }
 
 /* Responsividade Tablet */
@@ -207,11 +223,6 @@
         font-size: 1.375em;
     }
 
-    .banner__redes-btn-img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
     .banner__contato:hover {
         transition: 0.6s;
         background-image: url(../img/btn-hover.png);
@@ -233,11 +244,84 @@
         background-size: cover
     }
 
-    .banner__redes-btn-img:hover {
-        transition: 0.6s;
-        border-radius: 100%;
-        background-color: #0072ff;
-        box-shadow: 0 0 1rem var(--effect-color);
+    .banner__redes-sociais .button{
+        display: inline-block;
+        height: 3.75rem;
+        width: 3.75rem;
+        background-color: var(--primary-color);
+        overflow: hidden; 
+        text-align: flex-start;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.6s ease-out;
+        text-decoration: none;
+    }
+    
+    .banner__redes-sociais .button .icon{
+        display: inline-block;
+        height: 3.75rem;
+        width: 3.75rem;
+        text-align: center;
+        line-height: 3.75rem;
+        border-radius: 50px;
+        transition: all 0.6s ease-out;
+        color: var(--bg-title);
+    }
+
+    .banner__redes-sociais .button .icon i{
+        font-size: 1.56rem;
+        line-height: 3.75rem;
+        transition: all 0.6s ease-out;
+    }    
+
+    .banner__redes-sociais .button:hover{
+        width: 12.5rem;
+    }
+    
+    .banner__redes-sociais .button:hover .icon{
+        color: var(--primary-color);
+    }
+    
+    .banner__redes-sociais .button:nth-child(1):hover .icon{
+        background-color: var(--bg-title)
+    }
+    
+    .banner__redes-sociais .button:nth-child(2):hover .icon{
+        background-color: var(--bg-title)
+    }
+    
+    .banner__redes-sociais .button:nth-child(3):hover .icon{
+        background-color: var(--bg-title)
+    }
+    
+    .banner__redes-sociais .button:nth-child(4):hover .icon{
+        background-color: var(--bg-title)
+    }
+
+    .banner__redes-sociais .button span{
+        font-size: 1.125rem;
+        font-family: var(--primary-font);
+        font-weight: 700;
+        margin-left: 0.625rem;
+        transition: all 0.6s ease-out;
+        color: var(--bg-title);
+        text-decoration: none;
+    }
+
+    .banner__redes-sociais .button:nth-child(1):hover span{
+        color: var(--bg-title);
+    }
+    
+    .banner__redes-sociais .button:nth-child(2):hover span{
+        color: var(--bg-title);
+    }
+    
+    .banner__redes-sociais .button:nth-child(3):hover span{
+        color: var(--bg-title);
+    }
+    
+    .banner__redes-sociais .button:nth-child(4):hover span{
+        color: var(--bg-title);
     }
 
 }
