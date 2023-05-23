@@ -61,16 +61,16 @@
 
 /*Login e Registro*/
 
-html {
+html, body {
     overflow-x: hidden;
 }
 
 .login__registro {
-    height: 110vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 10vh 0 20.8vh 0;
 }
 
 .container__login__registro {
@@ -88,12 +88,12 @@ html {
     align-items: center;
     height: 430px;
     width: 200%;
-   transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .container__login__registro .forms__login {
     width: 50%;
-    padding: 30px;
+    padding: 2rem;
     transition:  margin-left 0.18s ease;
 }
 
@@ -139,7 +139,7 @@ html {
     position: relative;
     height: 3.125rem;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .campo__input input {
