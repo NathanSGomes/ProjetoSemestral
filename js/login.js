@@ -7,28 +7,19 @@ const container = document.querySelector(".container__login__registro"),
     login = document.querySelector(".login__link");
 
     // Icone Muda ao click da senha
-    pwShowHide.forEach(eyeIcon =>{
-        eyeIcon.addEventListener("click", ()=>{
-            pwFields.forEach(pwFields =>{
-                if(pwFields.type === "password"){
-                    pwFields.type = "text";
+    pwShowHide.forEach((eyeIcon, index) => {
+        eyeIcon.addEventListener("click", () => {
+            if (pwFields[index].type === "password") {
+                pwFields[index].type = "text";
+                eyeIcon.classList.replace("uil-eye-slash", "uil-eye");
+            } else {
+                pwFields[index].type = "password";
+                eyeIcon.classList.replace("uil-eye", "uil-eye-slash");
+            }
+        });
+    });
 
-                    pwShowHide.forEach(icon =>{
-                       icon.classList.replace("uil-eye-slash", "uil-eye");
-                    })
-
-                }else {
-                    pwFields.type = "password";
-
-                    pwShowHide.forEach(icon =>{
-                        icon.classList.replace("uil-eye", "uil-eye-slash");
-                     })
-                }
-            })
-        })
-    })
-
-    // 
+    // Troco entre Login e Registro
     registro.addEventListener("click", ()=>{
         container.classList.add("active");
     })
