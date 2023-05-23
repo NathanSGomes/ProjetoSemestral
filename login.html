@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCloud | Login</title>
+    <link rel="icon" href="assets/img/Icon.svg">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="header__forms">
+            <a class="forms__img-btn" href="index.html">
+                <img class="forms__img-mobile" src="assets/img/LogoMobile.png" alt="Logo da CyberCloud">
+            </a>
+            <div class="forms__logo">
+                <img src="assets/img/Logo.svg" alt="Logo da Cyber Cloud" class="forms__img">
+                <div><a href="index.html" class="forms__link">Cyber<b class="forms__link-azul">Cloud</b></a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login__registro">
+
+            <div class="container__login__registro">
+                <div class="forms">
+                    <!--LOGIN-->
+                    <div class="forms__login login">
+                        <span class="login__titulo">Login</span>
+
+                        <form action="#">
+                            <div class="campo__input">
+                                <input type="text" placeholder="Insira seu e-mail" required>
+                                <i class="uil uil-envelope icon"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="password" class="password" placeholder="Insira sua senha" required>
+                                <i class="uil uil-keyhole-circle icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="checkbox-text">
+                                <div class="checkbox-content">
+                                    <input type="checkbox" id="logCheck">
+                                    <label for="logCheck" class="text">Lembrar senha</label>
+                                </div>
+
+                                <a href="#" class="text">Esqueceu sua senha?</a>
+                            </div>
+
+                            <div class="campo__input botao">
+                                <input type="button" value="Entrar">
+                            </div>
+
+                        </form>
+
+                        <div class="login__registrar">
+                            <span class="text">Novo na CyberCloud?
+                                <a href="#" class="text registro__link">Cadastre-se</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--REGISTRO-->
+                    <div class="forms__login registro">
+                        <span class="login__titulo">Cadastrar-se</span>
+
+                        <form action="#">
+                            <div class="campo__input">
+                                <input type="text" placeholder="Insira seu nome completo" required>
+                                <i class="uil uil-user icon"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="text" placeholder="Insira seu e-mail" required>
+                                <i class="uil uil-envelope icon"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="text" placeholder="Insira seu endereço" required>
+                                <i class="uil uil-map-marker icon"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="number" placeholder="Insira seu CNPJ" required>
+                                <i class="uil uil-building icon"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="password" class="password" placeholder="Crie sua senha" required>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="campo__input">
+                                <input type="password" class="password" placeholder="Confirme sua senha" required>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="campo__input botao">
+                                <input type="button" value="Cadastrar-se">
+                            </div>
+
+                        </form>
+
+                        <div class="login__registrar">
+                            <span class="text">Novo na CyberCloud?
+                                <a href="#" class="text login__link">Cadastre-se</a>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container__rodape">
+        <div>
+            <img class="rodape__img" src="assets/img/LogoMobile.png" alt="Logo da Cyber Cloud">
+        </div>
+        <p class="rodape__direito">© 2022 - 2023 CyberCloud, Inc. Todos os direitos reservados.</p>
+        <!--Criado por Nathan Gomes https://github.com/NathanSGomes-->
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

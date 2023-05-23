@@ -1,0 +1,246 @@
+/* Header */
+
+.header__forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 2px solid var(--effect-color);
+    width: 100vw;
+    background-color: var(--bg-title);
+}
+
+.forms__img-mobile {
+    width: 6rem;
+    height: 3rem;
+}
+
+.forms__logo {
+    display: none;
+}
+
+.forms__link {
+    display: none;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+
+    .forms__img-mobile {
+        display: none;
+    }
+
+    .header__forms {
+        justify-content: left;
+    }
+
+    .forms__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .forms__img {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 1rem;
+    }
+
+    .forms__link {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .forms__link-azul {
+        color: var(--effect-color);
+    }
+}
+
+/*Login e Registro*/
+
+html {
+    overflow-x: hidden;
+}
+
+.login__registro {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.container__login__registro {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container__login__registro .forms {
+    display: flex;
+    align-items: center;
+    height: 430px;
+    width: 200%;
+   transition: all 0.2s ease;
+}
+
+.container__login__registro .forms__login {
+    width: 50%;
+    padding: 30px;
+    transition:  margin-left 0.18s ease;
+}
+
+.container__login__registro.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition:  margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container__login__registro .registro{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container__login__registro.active .registro{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container__login__registro.active .forms{
+    height: 745px;
+}
+
+.container__login__registro .forms__login .login__titulo {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+}
+
+.forms__login .login__titulo::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 30px;
+    background-color: var(--effect-color);
+    border-radius: 24px;
+}
+
+.forms__login .campo__input {
+    position: relative;
+    height: 3.125rem;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.campo__input input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--grey);
+    border-top: 2px solid transparent;
+    transform: all 0.2s ease;
+}
+
+.campo__input input:is(:focus, :valid) {
+    border-bottom-color: var(--effect-color);
+}
+
+.campo__input i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bg-color);
+    font-size: 23px;
+    transform: all 0.2s ease;
+}
+
+.campo__input input:is(:focus, :valid)~i {
+    color: var(--facebook);
+}
+
+.campo__input i.icon {
+    left: 0;
+}
+
+.campo__input i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.forms .checkbox-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px -2px 4px;
+    accent-color: var(--facebook);
+}
+
+.forms .text {
+    color: var(--bg-color);
+    font-size: 0.875rem;
+    font-family: var(--primary-font);
+}
+
+.forms a.text {
+    color: var(--facebook);
+    text-decoration: none;
+}
+
+.forms a:hover {
+    text-decoration: underline;
+}
+
+.forms .botao {
+    margin-top: 35px;
+}
+
+.forms .botao input {
+    border: none;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-color: var(--facebook);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao input:hover {
+    background-color: #1057B0;
+}
+
+.forms .login__registrar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

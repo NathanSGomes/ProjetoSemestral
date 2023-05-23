@@ -39,7 +39,7 @@
 .banner__btn {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .banner__contato {
@@ -276,13 +276,13 @@
     }
 
     .button:nth-child(2):hover {
-        background: var(--twitter);
-        box-shadow: 0 0 50px #1da0f280;
+        background: var(--instagram);
+        box-shadow: 0 0 50px #b315917c;
     }
 
     .button:nth-child(3):hover {
-        background: var(--instagram);
-        box-shadow: 0 0 50px #b315917c;
+        background: var(--twitter);
+        box-shadow: 0 0 50px #1da0f280;
     }
 
     .button:nth-child(4):hover {
@@ -307,12 +307,12 @@
     }
 
     .button:nth-child(2):hover .icon {
-        color: var(--twitter);
+        color: var(--instagram);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
     }
 
     .button:nth-child(3):hover .icon {
-        color: var(--instagram);
+        color: var(--twitter);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
     }
 

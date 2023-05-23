@@ -1,25 +1,3 @@
-@keyframes color-text {
-    0% {
-       color: #fc4a1a;
-    }
-    
-    25% {
-        color: #FF0080;
-    }
-    
-    50% {
-        color: #40E0D0;
-    }
-    
-    75% {
-        color: #FF0080;
-    }
-    
-    100% {
-       color: #fc4a1a;
-    }
-}
-
 .container__rodape {
     background: var(--bg-title);
     display: flex;
@@ -43,19 +21,7 @@
     padding: 1rem 0;
 }
 
-.credito {
-    font-family: var(--secundary-font);
-    font-weight: 300;
-    color: var(--grey);
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-}
 
-.credito__link {
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--effect-color);
-}
 
 /* Responsividade Tablet */
 
@@ -70,16 +36,4 @@
         height: 2.5rem;
     }
 
-    .credito {
-        font-size: 0.875rem;
-        margin-bottom: 1rem;
-    }
-
-    .credito__link {
-        color: var(--grey);
-    }
-
-    .credito__link:hover {
-        animation: color-text 6s ease infinite;
-    }
 }

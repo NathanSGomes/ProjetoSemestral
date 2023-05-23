@@ -18,16 +18,24 @@
             <a class="banner__img-btn" href="index.html">
                 <img class="header__img-mobile" src="assets/img/LogoMobile.png" alt="Logo da CyberCloud">
             </a>
-            <input type="checkbox" id="Menu" class="container__botao">
-            <label for="Menu" class="container__rotulo">
-                <span class="cabeçalho__menu container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__item"><a href="#Sobre" class="lista-menu__link">Sobre</a></li>
-                <li class="lista-menu__item"><a href="#Serviços" class="lista-menu__link">Serviços</a></li>
-                <li class="lista-menu__item"><a href="#Planos" class="lista-menu__link">Planos</a></li>
-                <li class="lista-menu__item"><a href="#Contato" class="lista-menu__link">Contato</a></li>
-            </ul>
+            <div class="menu__itens">
+                <a class="button__menu" href="login.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </div>
+                </a>
+
+                <input type="checkbox" id="Menu" class="container__botao">
+                <label for="Menu" class="container__rotulo">
+                    <span class="cabeçalho__menu container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item"><a href="#Sobre" class="lista-menu__link">Sobre</a></li>
+                    <li class="lista-menu__item"><a href="#Serviços" class="lista-menu__link">Serviços</a></li>
+                    <li class="lista-menu__item"><a href="#Planos" class="lista-menu__link">Planos</a></li>
+                    <li class="lista-menu__item"><a href="#Contato" class="lista-menu__link">Contato</a></li>
+                </ul>
+            </div>
 
             <div class="header__logo">
                 <img src="assets/img/Logo.svg" alt="Logo da Cyber Cloud" class="header__img">
@@ -39,6 +47,7 @@
                 <a href="#Serviços" class="lista-menu__link">Serviços</a>
                 <a href="#Planos" class="lista-menu__link">Planos</a>
                 <a href="#Contato" class="lista-menu__link">Contato</a>
+                <a  href="login.html" class="lista-menu__link__especial">Minha Conta</a>
             </div>
 
         </nav>
@@ -57,8 +66,8 @@
                     </p>
 
                     <div class="banner__btn">
-                        <a class="banner__contato" href="forms.html"><img class="banner__contato-img"
-                                src="assets/img/Contato.png" alt="Icone de E-mail">CONTATE-NOS</a>
+                        <a class="banner__contato" href="login.html"><img class="banner__contato-img"
+                                src="assets/img/Contato.png" alt="Icone de E-mail">CADASTRE-SE</a>
                         <a class="banner__saiba-mais" href="#Sobre">
                             <div class="banner__saiba-mais-img"></div>SAIBA MAIS
                         </a>
@@ -78,16 +87,16 @@
 
                     <a class="button" href="#" target="_blank">
                         <div class="icon">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
                         </div>
-                        <span>Twitter</span>
+                        <span>Instagram</span>
                     </a>
 
                     <a class="button" href="#" target="_blank">
                         <div class="icon">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
                         </div>
-                        <span>Instagram</span>
+                        <span>Twitter</span>
                     </a>
 
                     <a class="button" href="#" target="_blank">
@@ -294,7 +303,7 @@
             </div>
         </section>
         <!--Final do Plano-->
-        
+
         <!--Inicio do Contato-->
         <section class="container__contato" id="Contato">
             <div class="contato__caixa">
@@ -343,8 +352,7 @@
             <img class="rodape__img" src="assets/img/LogoMobile.png" alt="Logo da Cyber Cloud">
         </div>
         <p class="rodape__direito">© 2022 - 2023 CyberCloud, Inc. Todos os direitos reservados.</p>
-        <p class="credito">Criado por <a class="credito__link" href="https://github.com/NathanSGomes"
-                target="_blank">Nathan Gomes</a></p>
+       <!--Criado por Nathan Gomes https://github.com/NathanSGomes-->
     </footer>
     <!--Final do Rodapé-->
     <script src="js/main.js"></script>
