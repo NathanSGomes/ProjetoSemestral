@@ -1,0 +1,171 @@
+/* Header */
+
+.header__forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 2px solid var(--effect-color);
+    width: 100vw;
+    background-color: var(--bg-title);
+}
+
+.forms__img-mobile {
+    width: 6rem;
+    height: 3rem;
+}
+
+.forms__logo {
+    display: none;
+}
+
+.forms__link {
+    display: none;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 1024px) {
+
+    .forms__img-mobile {
+        display: none;
+    }
+
+    .header__forms {
+        justify-content: left;
+    }
+
+    .forms__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .forms__img {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 1rem;
+    }
+
+    .forms__link {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .forms__link-azul {
+        color: var(--effect-color);
+    }
+}
+
+.container__dados {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0 20.8vh 0;
+}
+
+.dados {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 430px;
+    width: 100%;
+}
+
+.dados .dados__cliente {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.campo__Dados {
+    position: relative;
+    height: 3.125rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.campo__Dados input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--grey);
+    border-top: 2px solid transparent;
+    transform: all 0.2s ease;
+}
+
+.campo__Dados input:is(:focus, :valid) {
+    border-bottom-color: var(--effect-color);
+}
+
+.campo__Dados i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bg-color);
+    font-size: 23px;
+    transform: all 0.2s ease;
+}
+
+.campo__Dados input:is(:focus, :valid)~i {
+    color: var(--facebook);
+}
+
+.campo__Dados i.icon {
+    left: 0;
+}
+
+.campo__Dados i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.button__sved {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Btn {
+    margin-top: 35px;
+}
+
+.Btn {
+    border: none;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-color: var(--facebook);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.Btn:hover {
+    background-color: #1057B0;
+}
+
+.salvar {
+    padding: 1rem;
+}
+
+.editar {
+    padding: .5rem;
+}
+
+.editar i{
+   font-size: 30px;
+}
