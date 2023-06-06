@@ -67,6 +67,11 @@
     padding: 10vh 0 20.8vh 0;
 }
 
+.dados__dados{
+    display: flex;
+    flex-direction: column;
+}
+
 .dados {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -134,10 +139,12 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
 }
 
 .Btn {
     margin-top: 35px;
+    width: 100%;
 }
 
 .Btn {

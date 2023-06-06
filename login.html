@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,12 +15,12 @@
 
     <header>
         <nav class="header__forms">
-            <a class="forms__img-btn" href="index.html">
+            <a class="forms__img-btn" href="index.php">
                 <img class="forms__img-mobile" src="assets/img/LogoMobile.png" alt="Logo da CyberCloud">
             </a>
             <div class="forms__logo">
                 <img src="assets/img/Logo.svg" alt="Logo da Cyber Cloud" class="forms__img">
-                <div><a href="index.html" class="forms__link">Cyber<b class="forms__link-azul">Cloud</b></a></div>
+                <div><a href="index.php" class="forms__link">Cyber<b class="forms__link-azul">Cloud</b></a></div>
             </div>
         </nav>
     </header>
@@ -33,14 +34,14 @@
                     <div class="forms__login login">
                         <span class="login__titulo">Login</span>
 
-                        <form action="#">
+                        <form action="login.php" method="POST">
                             <div class="campo__input">
-                                <input type="text" placeholder="Insira Seu E-mail" required>
+                                <input name="email" type="email" placeholder="Insira Seu E-mail" required>
                                 <i class="uil uil-envelope icon"></i>
                             </div>
 
                             <div class="campo__input">
-                                <input type="password" class="password" placeholder="Insira Sua Senha" required>
+                                <input name="senha" type="password" class="password" placeholder="Insira Sua Senha" required>
                                 <i class="uil uil-keyhole-circle icon"></i>
                                 <i class="uil uil-eye-slash showHidePw"></i>
                             </div>
@@ -55,7 +56,7 @@
                             </div>
 
                             <div class="campo__input botao">
-                                <input type="button" value="Entrar">
+                                <button type="submit" id="botaoLogin">Entrar</button>
                             </div>
 
                         </form>
@@ -67,46 +68,45 @@
                         </div>
                     </div>
                     <!--REGISTRO-->
-                    <div class="forms__login registro">
+                    <div id="registro" class="forms__login registro">
                         <span class="login__titulo">Registro</span>
 
-                        <form action="#">
+                        <form action="cadastro.php" method="POST">
                             <div class="campo__input">
-                                <input id="nome" type="text" placeholder="Insira Seu Nome Completo" required>
+                                <input name="nome" id="nome" type="text" placeholder="Insira Seu Nome Completo" required>
                                 <i class="uil uil-user icon"></i>
                             </div>
-
+                        
                             <div class="campo__input">
-                                <input id="email" type="text" placeholder="Insira Seu E-mail" required>
+                                <input name="email" id="email" type="email" placeholder="Insira Seu E-mail" required>
                                 <i class="uil uil-envelope icon"></i>
                             </div>
-
+                        
                             <div class="campo__input">
-                                <input id="endereco" type="text" placeholder="Insira Seu Endereço" required>
+                                <input name="endereco" id="endereco" type="text" placeholder="Insira Seu Endereço" required>
                                 <i class="uil uil-map-marker icon"></i>
                             </div>
-
+                        
                             <div class="campo__input">
-                                <input id="cnpj" type="number" placeholder="Insira Seu CNPJ" required>
+                                <input name="cnpj" id="cnpj" type="number" placeholder="Insira Seu CNPJ" required>
                                 <i class="uil uil-building icon"></i>
                             </div>
-
+                        
                             <div class="campo__input">
-                                <input id="senha" type="password" class="password" placeholder="Crie Sua Senha" required>
+                                <input name="senha" id="senha" type="password" class="password" placeholder="Crie Sua Senha" required>
                                 <i class="uil uil-lock icon"></i>
                                 <i class="uil uil-eye-slash showHidePw"></i>
                             </div>
-
+                        
                             <div class="campo__input">
-                                <input id="confirmarSenha" type="password" class="password" placeholder="Confirme Sua Senha" required>
+                                <input name="confirmarSenha" id="confirmarSenha" type="password" class="password" placeholder="Confirme Sua Senha" required>
                                 <i class="uil uil-lock icon"></i>
                                 <i class="uil uil-eye-slash showHidePw"></i>
                             </div>
-
+                        
                             <div class="campo__input botao">
-                                <input id="botaoCadastrar" type="button" value="Cadastrar-se">
+                                <button type="submit" id="botaoCadastrar">Cadastrar-se</button>
                             </div>
-
                         </form>
 
                         <div class="login__registrar">

@@ -213,11 +213,11 @@ html, body {
     text-decoration: underline;
 }
 
-.forms .botao {
+.botao {
     margin-top: 35px;
 }
 
-.forms .botao input {
+.forms .botao button {
     border: none;
     color: var(--primary-color);
     letter-spacing: 1px;
@@ -228,9 +228,11 @@ html, body {
     background-color: var(--facebook);
     cursor: pointer;
     transition: all 0.3s ease;
+    padding: 1rem;
+    width: 100%;
 }
 
-.botao input:hover {
+.botao button:hover {
     background-color: #1057B0;
 }
 
